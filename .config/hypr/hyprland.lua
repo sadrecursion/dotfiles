@@ -15,7 +15,8 @@ local power_menu = "~/.local/bin/power_menu.sh"
 local browser = "firefox"
 local color_picker = "hyprpicker -a"
 local lock = "hyprlock"
-local screen_shot = "hyprshot -m region --clipboard-only"
+local screen_shot_clipboard = "hyprshot -m region --clipboard-only"
+local screen_shot_save = "hyprshot -m region"
 
 
 -- Autostart
@@ -119,7 +120,8 @@ hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(pdf))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(power_menu))
 hl.bind(mainMod .. " + SHIFT + Escape", hl.dsp.exec_cmd(lock))
-hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(screen_shot))
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(screen_shot_clipboard))
+hl.bind(mainMod .. " + SHIFT + Print", hl.dsp.exec_cmd(screen_shot_save))
 
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd("hyprctl switchxkblayout all next"))
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exit())
