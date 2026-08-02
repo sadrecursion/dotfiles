@@ -1,7 +1,6 @@
 neovim
 git
 stow
-eza
 fd
 less
 fzf
