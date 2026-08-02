@@ -8,9 +8,8 @@
 set -o vi
 
 alias ..="cd .."
-alias ls="eza -1 -s type"
-alias l="eza -1 -a -s type"
-alias ll="eza -l -a -s type"
+alias l="ls -1 -a"
+alias ll="ls -la"
 alias grep="grep --color=auto"
 alias rebash="source ~/.bashrc"
 alias renvm="source /usr/share/nvm/init-nvm.sh"
