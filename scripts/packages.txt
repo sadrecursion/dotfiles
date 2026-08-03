@@ -5,13 +5,15 @@ fd
 less
 fzf
 ripgrep
+unzip
+7zip
 
 hyprland
 hyprlock
 hyprpicker
 hyprshot
 waybar
-awwww
+awww
 foot
 fuzzel
 firefox

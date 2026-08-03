@@ -1,13 +1,8 @@
 #!/bin/bash
+
+# Run in chroot!
+
 set -euo pipefail
-
-error() {
-    echo "$(basename "$0") failed"
-    echo "line $1"
-    echo "command $2"
-}
-
-trap 'error "$LINENO" "$BASH_COMMAND"' ERR
 
 echo "arch setup script..."
 
