@@ -12,8 +12,8 @@ hyprland
 hyprlock
 hyprpicker
 hyprshot
+hyprpaper
 waybar
-awww
 foot
 fuzzel
 firefox

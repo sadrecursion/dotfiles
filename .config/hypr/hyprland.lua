@@ -22,7 +22,7 @@ local screen_shot_save = "hyprshot -m region"
 -- Autostart
 hl.on("hyprland.start", function () 
     hl.exec_cmd("waybar")
-    hl.exec_cmd("awww-daemon")
+    hl.exec_cmd("hyprpaper")
 end)
 
 
