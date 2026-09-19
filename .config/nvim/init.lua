@@ -22,13 +22,15 @@ vim.opt.endofline = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
+vim.api.nvim_set_hl(0, "NormalFloat", { link = "Normal" })
+
 vim.cmd.packadd('nvim.undotree')
 
 vim.pack.add({
     'https://github.com/tpope/vim-fugitive',
     'https://github.com/tpope/vim-surround',
     'https://github.com/tpope/vim-repeat',
-    'https://github.com/tpope/vim-vinegar',
+    'https://github.com/stevearc/oil.nvim',
     'https://github.com/dmtrKovalenko/fff',
 })
 
@@ -48,10 +50,21 @@ vim.g.fff = {
 
 require('fff').setup({
     prompt = '> ',
-    hl = {
-        normal = "Normal",
-        border = "Normal",
-      },
+})
+
+require("oil").setup({
+    default_file_explorer = true,
+    columns = {
+        "permissions",
+        "size",
+        "mtime",
+    },
+    view_options = {
+        show_hidden = true,
+    },
+    confirmation = {
+        border = "single",
+    },
 })
 
 -- Not really using this since fff
@@ -80,6 +93,7 @@ map('i', '<C-s>', 'std::', { noremap = true, silent = true })
 map('n', '<leader>f', require('fff').find_files)
 map('n', '<leader>g', require('fff').live_grep)
 map('n', '<leader>m', ':make ')
+map('n', '<leader>o', '<CMD>Oil<CR>')
 
 map('n', '<leader>ts', function()
   local timestamp = os.date('%Y-%m-%dT%H:%M:%S%z')
