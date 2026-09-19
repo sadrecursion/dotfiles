@@ -81,6 +81,7 @@ hl.config({
 hl.config({
     scrolling = {
         fullscreen_on_one_column = true,
+        explicit_column_widths = "0.5, 0.9",
     },
 })
 
@@ -88,12 +89,12 @@ hl.config({
     misc = {
         force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
         disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
+        disable_splash_rendering = true,
     },
 })
 
 
 -- Input
-
 hl.config({
     input = {
         kb_layout = "es,us",
@@ -111,7 +112,6 @@ hl.config({
 })
 
 -- Keybindings
-
 local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd(terminal))
@@ -134,6 +134,10 @@ hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
+
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.layout("swapcol l"))
+hl.bind(mainMod .. " + SHIFT + H", hl.dsp.layout("swapcol r"))
+hl.bind(mainMod .. " + SHIFT + Space", hl.dsp.layout("colresize +conf"))
 
 for i = 1, 10 do
     local key = i % 10 -- 10 maps to key 0
