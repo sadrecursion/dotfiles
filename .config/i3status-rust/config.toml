@@ -1,0 +1,52 @@
+[theme]
+theme = "plain" # Tema plano sin degradados ni colores llamativos
+
+[theme.overrides]
+separator_fg = "#555555"
+
+[icons]
+icons = "none" # Desactiva por completo los iconos
+
+# 1. Uso de CPU
+[[block]]
+block = "cpu"
+interval = 2
+format = " cpu: $utilization "
+
+# 2. Temperatura del CPU
+[[block]]
+block = "temperature"
+interval = 10
+format = " temp: $max "
+chip = "*-isa-*"
+
+# 3. Uso de Memoria RAM
+[[block]]
+block = "memory"
+interval = 5
+format = " ram: $mem_used_percents "
+
+# 4. Estado de la Batería
+[[block]]
+block = "battery"
+interval = 20
+format = " bat: $percentage "
+
+# 5. Brillo
+[[block]]
+block = "backlight"
+device = "intel_backlight"
+format = " bri: $brightness "
+
+# 5. Tiempo de encendido (Uptime)
+[[block]]
+block = "uptime"
+interval = 60
+format = " $uptime "
+
+# 6. Hora y Fecha
+[[block]]
+block = "time"
+interval = 60
+format = " $timestamp.datetime(f:'%Y-%m-%d %R')"
+
