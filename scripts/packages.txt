@@ -8,18 +8,10 @@ ripgrep
 unzip
 7zip
 
-hyprland
-hyprlock
-hyprpicker
-hyprshot
-hyprpaper
-waybar
-
 sway
 i3status-rust
 
 foot
-fuzzel
 firefox
 
 sof-firmware
