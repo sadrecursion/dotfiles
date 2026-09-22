@@ -29,4 +29,3 @@ PROMPT_COMMAND="__foot_osc7${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
 
 export EDITOR=nvim
 export VISUAL=nvim
-export NNN_OPTS="e"
