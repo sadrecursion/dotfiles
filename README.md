@@ -5,7 +5,7 @@
 The dotfiles are managed with `stow`. Clone the repository into your home directory and run:
 
 ```sh
-stow --adopt dotfiles
+stow --adopt .
 ```
 
 ## Arch Linux install
@@ -17,11 +17,6 @@ The list of packages is defined in `packages.txt`.
 
 ## More scripts
  - `nmcli-connect-eduroam.sh` creates and configures an eduroam connection.
-
-## Neovim
-A minimal, mostly native configuration with only a few essential plugins.
-
-The `:find` command uses a custom `findfunc` based on `fd` and `vim.fn.matchfuzzy`.
 
 ## TODO
  - [ ] Bootloader recovery script

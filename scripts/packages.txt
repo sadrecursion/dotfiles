@@ -14,6 +14,10 @@ hyprpicker
 hyprshot
 hyprpaper
 waybar
+
+sway
+i3status-rust
+
 foot
 fuzzel
 firefox
