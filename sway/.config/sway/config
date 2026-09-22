@@ -2,7 +2,7 @@ set $mod Mod4
 
 bindsym $mod+Shift+Return exec foot
 bindsym $mod+p exec firefox
-bindsym $mod+d exec fuzzel
+bindsym $mod+d exec bemenu-run -n -l 30 --fn 'JetBrainsMono Nerd Font 10' --scrollbar always --counter alway
 bindsym $mod+z exec zathura
 bindsym $mod+m exec ~/.local/bin/power_menu.sh
 

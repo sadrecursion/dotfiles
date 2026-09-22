@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SELECTION="$(printf "Suspend\nReboot\nReboot to UEFI\nHard reboot\nShutdown" | fuzzel --dmenu -p "Power Menu: ")"
+SELECTION="$(printf "Suspend\nReboot\nReboot to UEFI\nHard reboot\nShutdown" | bemenu -n -l 30 --fn 'JetBrainsMono Nerd Font 10' --scrollbar always --counter alway -p "Power Menu: ")"
 
 case $SELECTION in
     *"Suspend")

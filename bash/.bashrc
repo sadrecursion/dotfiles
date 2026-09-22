@@ -14,6 +14,7 @@ alias grep="grep --color=auto"
 alias rebash="source ~/.bashrc"
 alias renvm="source /usr/share/nvm/init-nvm.sh"
 alias vim="nvim"
+alias dmenu="bemenu-run -n -l 30 --fn 'JetBrainsMono Nerd Font 10' --scrollbar always --counter alway"
 
 PS1="\h@\u at \w "
 

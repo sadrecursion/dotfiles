@@ -5,7 +5,7 @@
 The dotfiles are managed with `stow`. Clone the repository into your home directory and run:
 
 ```sh
-stow --adopt .
+stow <package>
 ```
 
 ## Arch Linux install

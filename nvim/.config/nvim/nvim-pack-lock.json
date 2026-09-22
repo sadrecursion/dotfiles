@@ -1,0 +1,81 @@
+{
+  "plugins": {
+    "blink.cmp": {
+      "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "'tags/v1.10.2'"
+    },
+    "fff": {
+      "rev": "b6f351d7295d3f89d4f9ecaa94d72089964edc0f",
+      "src": "https://github.com/dmtrKovalenko/fff"
+    },
+    "fff.nvim": {
+      "rev": "bca71efb32e208d0498369197303954b15e91b63",
+      "src": "https://github.com/dmtrKovalenko/fff.nvim"
+    },
+    "flash.nvim": {
+      "rev": "fcea7ff883235d9024dc41e638f164a450c14ca2",
+      "src": "https://github.com/folke/flash.nvim.git"
+    },
+    "fzf-lua": {
+      "rev": "ffa44ee9470743a7697d28df3a1a216fdfe2b09d",
+      "src": "https://github.com/ibhagwan/fzf-lua.git"
+    },
+    "hydra.nvim": {
+      "rev": "3ced42c0b6a6c85583ff0f221635a7f4c1ab0dd0",
+      "src": "https://github.com/anuvyklack/hydra.nvim"
+    },
+    "kanso.nvim": {
+      "rev": "1afbbb449aa0254823dbe1932e3cbb51886ff9fe",
+      "src": "https://github.com/webhooked/kanso.nvim.git"
+    },
+    "modus-themes.nvim": {
+      "rev": "17a64464c27c1be605adca13dbe48f2f402fe107",
+      "src": "https://github.com/miikanissi/modus-themes.nvim"
+    },
+    "neogit": {
+      "rev": "792c139da736230855e8341ebe6175bb6eb8268b",
+      "src": "https://github.com/NeogitOrg/neogit.git"
+    },
+    "nvim-lspconfig": {
+      "rev": "8fde495949782bb61c2605174e231d145a048d8c",
+      "src": "https://github.com/neovim/nvim-lspconfig.git"
+    },
+    "nvim-treesitter": {
+      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter.git"
+    },
+    "oil.nvim": {
+      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
+      "src": "https://github.com/stevearc/oil.nvim.git"
+    },
+    "plenary.nvim": {
+      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+      "src": "https://github.com/nvim-lua/plenary.nvim.git"
+    },
+    "quicker.nvim": {
+      "rev": "1c9322b7e2967472548ba9bccd1ccd40e49d0a49",
+      "src": "https://github.com/stevearc/quicker.nvim"
+    },
+    "vim-fugitive": {
+      "rev": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0",
+      "src": "https://github.com/tpope/vim-fugitive"
+    },
+    "vim-repeat": {
+      "rev": "65846025c15494983dafe5e3b46c8f88ab2e9635",
+      "src": "https://github.com/tpope/vim-repeat"
+    },
+    "vim-surround": {
+      "rev": "3d188ed2113431cf8dac77be61b842acb64433d9",
+      "src": "https://github.com/tpope/vim-surround"
+    },
+    "vim-vinegar": {
+      "rev": "bb1bcddf43cfebe05eb565a84ab069b357d0b3d6",
+      "src": "https://github.com/tpope/vim-vinegar"
+    },
+    "zenbones.nvim": {
+      "rev": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "src": "https://github.com/zenbones-theme/zenbones.nvim"
+    }
+  }
+}
