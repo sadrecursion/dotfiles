@@ -93,7 +93,7 @@ map('i', '<C-s>', 'std::', { noremap = true, silent = true })
 map('n', '<leader>f', require('fff').find_files)
 map('n', '<leader>g', require('fff').live_grep)
 map('n', '<leader>m', ':make ')
-map('n', '<leader>o', '<CMD>Oil<CR>')
+map('n', '-', '<CMD>Oil<CR>')
 
 map('n', '<leader>ts', function()
   local timestamp = os.date('%Y-%m-%dT%H:%M:%S%z')
