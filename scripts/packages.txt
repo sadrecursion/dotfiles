@@ -9,6 +9,7 @@ unzip
 7zip
 
 sway
+sway-contrib
 i3status-rust
 
 foot
