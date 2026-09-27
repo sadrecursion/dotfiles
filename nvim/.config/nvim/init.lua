@@ -80,6 +80,10 @@ function UseFd(cmdarg, cmdcomplete)
 end
 vim.opt.findfunc = "v:lua.UseFd"
 
+function timestamp()
+    return os.date('%Y-%m-%dT%H:%M:%S%z')
+end
+
 local map = vim.keymap.set
 map('n', '<Space>', '<Nop>')
 map({ 'n', 'v', 'x' }, '<leader>y', '"+y')
@@ -95,7 +99,20 @@ map('n', '<leader>g', require('fff').live_grep)
 map('n', '<leader>m', ':make ')
 map('n', '-', '<CMD>Oil<CR>')
 
+map('n', '<leader>nn', function()
+    local title = vim.fn.input('Title: ')
+
+    local lines = {
+        '---',
+        'title: ' .. title,
+        'created: ' .. timestamp(),
+        'tags: []',
+        '---',
+    }
+
+    vim.api.nvim_put(lines, 'c', true, true)
+end)
+
 map('n', '<leader>ts', function()
-  local timestamp = os.date('%Y-%m-%dT%H:%M:%S%z')
-  vim.api.nvim_put({ timestamp }, 'c', true, true)
-end, { desc = 'Insert timestamp' })
+    vim.api.nvim_put({ timestamp() }, 'c', true, true)
+end)
