@@ -18,13 +18,13 @@ stow nvim foot
 
 Packages:
 
-- `bash` — `~/.bashrc`: vi mode, aliases and history settings.
-- `foot` — `~/.config/foot/foot.ini`: terminal emulator config.
-- `git` — `~/.gitconfig`: aliases, `main` as default branch, `zdiff3` conflicts, colored output.
-- `i3status-rust` — `~/.config/i3status-rust/config.toml`: status bar for Sway.
-- `nvim` — `~/.config/nvim/`: Neovim config with pinned plugins.
-- `sway` — `~/.config/sway/config`: keybindings and app launchers.
-- `zathura` — `~/.config/zathura/zathurarc`: PDF viewer config.
+- `bash`
+- `foot`
+- `git`
+- `i3status-rust`
+- `nvim`
+- `sway`
+- `zathura`
 
 `scripts/` and `wallpapers/` are not dotfile config, so they are not listed above.
 
@@ -36,8 +36,8 @@ The list of packages is defined in `packages.txt`.
  3. Run `arch-install.sh`.
 
 ## More scripts
- - `nmcli-connect-eduroam.sh` creates and configures an eduroam connection.
+- `nmcli-connect-eduroam.sh` creates and configures an eduroam connection.
 
 ## TODO
- - [ ] Bootloader recovery script
- - [ ] GitHub SSH key generation script
+- [ ] Bootloader recovery script
+- [ ] GitHub SSH key generation script
